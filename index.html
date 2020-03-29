@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="slideout-menu">
+            <ul>
+                <li>
+                    <a  href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="prvproj.html">Previous projects</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="options.html">Options</a>
+                </li>
+            </ul>
+        </div>
+
+        <nav> 
+            <div id="logo-img">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="alt image">
+                </a>
+            </div>
+            <div id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        <ul>
+            <li>
+                <a  href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="prvproj.html">Previous projects</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="options.html">Options</a>
+            </li>
+        </ul>
+        </nav>
+            <div id="banner"></div>
+    </header>
+    <div id="mainbody">
+        <h3 id="header">About Us</h3>
+        <p>
+            we offer many solutions for installing automatic hydroponics system.
+            We have worked with many well known companies around the world. We also service the system we have installed. Bellow you can see our main base of operations.
+            and in this site you can see all our previous projects, our gallery and our currently avialable options. If you wish to get something setup for yourself feel free
+            to contact us.
+        </p>
+        <div id="map"></div>
+    <script>
+        function initMap() {
+        var rvt = {lat: 56.953, lng: 24.103};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 10, center: rvt});
+        var marker = new google.maps.Marker({position: rvt, map: map});
+        }
+    </script>
+    </div>
+    <footer>
+        <div id="left-footer">
+            <ul>
+                <li>
+                    <a  href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="prvproj.html">Previous projects</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="options.html">Options</a>
+                </li>
+            </ul>
+    </div>
+
+    <div id="right-footer">
+        <h3>Follow us</h3>
+        <div id="social-media-footer">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <script src="https://kit.fontawesome.com/5d2eb5be19.js" crossorigin="anonymous"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4XLWmW0ZmCr6yznaGlaLQ1Rwl97PyERA&callback=initMap"> </script>
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>
