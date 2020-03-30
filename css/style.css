@@ -223,6 +223,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+    display: flex;
   }
   
   .modal-body {padding: 2px 16px;}
@@ -282,6 +283,10 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 
 .card-image {
     transition: 0.4s;
+}
+
+.card{
+    border: none;
 }
 
 .card-image:hover {
@@ -351,6 +356,36 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 #photo img{
     width: 400px;
     height: auto;
+    padding: 10px 10px 10px;
+}
+
+#dropdownMenuButton {
+    background-color: limegreen;
+    border: none;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#dropdownMenuButton:hover {
+    color: black;
+}
+
+.dropdown {
+    padding: 10px 16px;
+}
+
+.dropdown-menu {
+    background-color: #e7ebe6;
+}
+
+.dropdown-item {
+    padding: 10px 10px;
+    transition: 0.4s;
+}
+
+.dropdown-item:hover {
+    padding: 10px 16px;
+    background-color: lightgreen;
 }
 
 .card-image img {

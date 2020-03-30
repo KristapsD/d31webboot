@@ -54,23 +54,56 @@
             <div id="banner"></div>
     </header>
     <div id="mainbody">
-        <h3 class="header">About Us</h3>
+        <div class="row justify-content-center">
+        <h3 class="header col-md-8">About Us</h3>
         <p>
             we offer many solutions for installing automatic hydroponics system.
             We have worked with many well known companies around the world. We also service the system we have installed. Bellow you can see our main base of operations.
             and in this site you can see all our previous projects, our gallery and our currently avialable options. If you wish to get something setup for yourself feel free
             to contact us.
         </p>
+        </div>
         <div id="map"></div>
-    <script>
-        function initMap() {
-        var rvt = {lat: 56.953, lng: 24.103};
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 10, center: rvt});
-        var marker = new google.maps.Marker({position: rvt, map: map});
-        }
-    </script>
-    </div>
+            <script>
+                function initMap() {
+                var rvt = {lat: 56.953, lng: 24.103};
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 10, center: rvt});
+                var marker = new google.maps.Marker({position: rvt, map: map});
+                }
+            </script>
+        </div>
+    <div class="row col-md-12 justify-content-center"><h3 class="header">These are our previous clients</h3></div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Firstname/company name</th>
+            <th scope="col">last name</th>
+            <th scope="col">Review</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Very good product, have my own personal hydroponics garden now!</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Local pizza shop</td>
+            <td>-</td>
+            <td>Helped us make a company garden for our pizza shop. Great service.</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>John</td>
+            <td>Billy</td>
+            <td>Asked for a lettuce hydroponics setup for my farm. They not only delivered that but did even more.</td>
+          </tr>
+        </tbody>
+      </table>
     <footer>
         <div id="left-footer">
             <ul>
@@ -114,6 +147,9 @@
         <script src="https://kit.fontawesome.com/5d2eb5be19.js" crossorigin="anonymous"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4XLWmW0ZmCr6yznaGlaLQ1Rwl97PyERA&callback=initMap"> </script>
         <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </footer>
 </body>
 </html>
